@@ -1,0 +1,194 @@
+ul {
+    list-style: none;
+}
+
+li {}
+
+label {
+    margin-right: 0px;
+    color: white;
+}
+
+.contact_form {
+    margin-left: 10%;
+    border-style: solid;
+    width: 30%;
+    height: auto;
+    border-color: #1a0000;
+    border-width: 1px;
+    background-color: rgba(0, 26, 0, 0.8);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    margin-top: 10px;
+    float: left;
+    color: black;
+}
+
+.p1 {
+    width: 220px;
+    height: auto;
+    margin-top: -50%;
+    margin-left: 20%;
+    display: block;
+}
+
+.no {
+    font-size: 16px;
+}
+
+.no a:link {
+    text-decoration: none;
+}
+
+.field {
+    background-color: rgba(0, 26, 0, 0.9);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+}
+
+.p {
+    width: 350px;
+    height: 350px;
+    margin-left: 25%;
+    margin-top: -58%;
+    color: white;
+    width: 290px;
+    font-size: 16px;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-style: inset;
+    border-width: 1px;
+    height: 100px;
+    padding: 4px 10px 2px;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -o-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    background-color: rgba(0, 26, 0, 0.8);
+    box-shadow: 1px 16px 5px #888888;
+    -webkit-transform-origin-y: rotate(-27deg);
+    -moz-transform: rotate(-27deg);
+    -o-transform: rotate(-27deg);
+    -ms-transform: rotate(-27deg);
+    -webkit-transform: rotate(-27deg);
+}
+
+.circle1 {
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.circle {
+    width: 350px;
+    height: 350px;
+    background-color: black;
+    float: left;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    margin-left: 11%;
+    margin-top: 150px;
+    display: block;
+}
+
+.body {
+    background-color: rgba(0, 26, 0, 0.8);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+field {
+    width: 600px;
+}
+
+.button {
+    margin-left: 0px;
+    padding: 5px 50px 5px;
+    background-color: rgba(0, 26, 0, 0.9);
+    color: white;
+    margin-bottom: 3px;
+}
+
+.button:hover {
+    background-color: rgba(0, 26, 0, 0.9);
+    color: white;
+    width: 240px;
+    margin-left: 60px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+@media only screen and (min-width:150px) and (max-width:600px) {
+    .contact_form {
+        border: none;
+        width: 0%;
+    }
+    form {
+        width: 100%;
+        height: 200px;
+    }
+    .field {
+        max-width: 10px;
+        height: auto;
+        padding: 30px 30px 30px;
+        margin-left: -30px;
+        background-color: rgba(0, 26, 0, 0.9);
+        padding: 0px;
+    }
+    .button:hover {
+        margin-left: 0px;
+        width: auto;
+    }
+    .button {
+        margin-top: 20%;
+        margin-left: 90%;
+    }
+    .circle,
+    .circle1 {
+        width: 100%;
+        border-radius: 80%;
+        -webkit-border-radius: 80%;
+        -moz-border-radius: 80%;
+        -o-border-radius: 80%;
+        margin-left: -1%;
+        display: block
+    }
+    .circle {
+        margin-top: 190%;
+    }
+    .p {
+        font-size: 14px;
+        width: 200px;
+        border-radius: 70%;
+        -webkit-border-radius: 70%;
+        -moz-border-radius: 70%;
+        -o-border-radius: 70%;
+        color: black
+    }
+    .p1 {
+        margin-top: -60%;
+    }
+}

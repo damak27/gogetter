@@ -1,0 +1,146 @@
+.login {
+    margin-bottom: 10%;
+    margin-left: 17%;
+    padding: 150px 0px 150px;
+}
+
+.raw1 {
+    padding: 20px 100px 10px;
+}
+
+.back {
+    height: 1000px;
+    background-color: rgba(0, 26, 0, 0.6);
+}
+
+
+/* the frame of login */
+
+.bottomsidebar2 {
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    border-radius: 10px;
+    margin-bottom: 0%;
+    background-color: rgba(0, 26, 0, 0.8);
+    height: auto;
+    width: 500px;
+    display: block;
+}
+
+.input_form {
+    margin: 10px;
+    color: white;
+}
+
+.login_form .btn {
+    float: left;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    border: solid;
+    border-width: 1px;
+    background-color: rgba(0, 26, 0, 0.8);
+    color: white;
+}
+
+.creat_account button {
+    color: white;
+    float: left;
+    margin-left: 0%;
+    padding: 5px 6px 8px;
+    border: solid;
+    border-width: 0.2px;
+    background-color: rgba(0, 26, 0, 0.8);
+}
+
+button a:link {
+    text-decoration: none;
+    color: white;
+}
+
+button a {
+    color: white;
+}
+
+
+/* sumit button*/
+
+button {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+/* Login title*/
+
+.login_form h2 {
+    margin-left: 30%;
+    color: white;
+}
+
+
+/* login inputs*/
+
+.login_form {
+    margin-left: 20%;
+}
+
+
+/* images in  grid view/columns)*/
+
+.bar1 img {
+    width: 250px;
+    border-radius: 15%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20%;
+    overflow: hidden;
+}
+
+
+/* this will apply on images when hover*/
+
+.img:hover {
+    opacity: 0.9;
+}
+
+@media only screen and (min-width:150px) and (max-width:600px) {
+    .creat_account button {
+        margin-left: 10px;
+        float: left;
+    }
+    .input_form {
+        margin: 10px;
+        margin-left: -20%;
+        color: white;
+    }
+    .login_form .btn {
+        margin-left: -10%;
+        float: left;
+    }
+    .login_form h2 {
+        margin-left: -15%;
+    }
+    .bottomsidebar2 {
+        margin-top: -30%;
+        height: auto;
+        width: 260px;
+        display: block;
+        margin-left: -10%;
+    }
+    .back {
+        margin-top: -35%;
+    }
+    .login {
+        margin-top: 100px;
+        margin-left: 6%;
+    }
+    .bar1 img {
+        width: 220px;
+        margin-left: -90%;
+        height: auto;
+        margin-top: 20px;
+    }
+}
