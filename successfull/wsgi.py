@@ -8,7 +8,7 @@ https://docs.djangoproject.com/en/1.10/howto/deployment/wsgi/
 """
 
 import os
-path = '/home/damak/mysite'
+path = '/home/damak/gogetter'
 if path not in sys.path:
     sys.path.append(path)
 
