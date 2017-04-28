@@ -15,6 +15,7 @@ if path not in sys.path:
 os.environ['DJANGO_SETTINGS_MODULE'] = 'gogetter.settings'
 from django.core.wsgi import get_wsgi_application
 
+
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "successfull.settings")
 
 application = get_wsgi_application()
