@@ -1,4 +1,7 @@
-db.squlite3
 *.pyc
-*.python
-media
+*~
+__pycache__
+myvenv
+db.sqlite3
+/static
+.DS_Store
