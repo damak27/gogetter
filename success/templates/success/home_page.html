@@ -1,0 +1,78 @@
+ {% extends 'success/base1.html' %}{% block content %} {% load staticfiles %}
+<!-- Check if the user is is_authenticated and displays the user name and info if True-->
+
+
+<!-- End of user authentication-->
+
+<!--Holds the main static content of the home page view-->
+
+
+<div class="profile">
+    {% if user.is_authenticated %}
+
+    <p>Is a pleasure to have you <span class="user">{{ user.get_username }}.</span> <a href="/">VIEW PROFILE</a> </p>
+    <!-- Random motivation quotes to display to user when they login-->
+
+
+
+    {% for quotes in quote %}:
+
+    <div class="item1">
+
+        <p>
+            <span class="user">{{ user.get_username }}: </span>{{ quotes.quote }} <br> Quote_by: {{ quotes.quote_by }}
+        </p>
+    </div>
+
+</div>
+
+
+
+{% endfor %} {% else %}
+<p> Login to get connected with investors and startups.<br> Your success is our priority .</p>{% endif %}
+
+</div>
+
+<div class="main_content">
+    {% if object_list %}
+    <div class="row ">
+        {% for article in articles %}
+        <div class="col-md-5 col-sm-5 articles">
+            <article>
+
+                <!-- Dymanic view of  news objects -->
+
+
+                <title>{{article.article_title}}</title>
+
+                <content>
+                    <div class="articl_title">{{article.article_title}}</div>
+                    {% if article.article_album %}
+                    <a href="{% url 'success:Detail_article' article.id %}"> <img class="img" src="{{ article.article_album.url }}" /></a>
+
+                    {% endif %}
+
+                    <div class="article_hit">{{article.article_hit}}</div>
+                    <div class="divider">
+                        <div class="author">
+                            Written By:{{article.author}}
+                        </div>
+                        <div class="pulishe_date">
+                            Publish:{{article.pulished_date}}
+                        </div>
+                    </div>
+                </content>
+                <footer>
+                </footer>
+
+            </article>
+
+        </div>{% endfor %} {% else %}
+        <h1> NO ARTICLES TO DISPLAY </h1>
+    </div>{% endif %}
+</div>
+</div>
+
+<!-- news objects will be displayed in a slit show with advertisement-->
+
+{% endblock content %}>

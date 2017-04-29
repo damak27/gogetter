@@ -1,0 +1,187 @@
+    body {
+        width: 100%;
+    }
+    
+    .articles img {
+        width: 100%;
+        height: auto;
+        padding: 10px 10px 10px;
+    }
+    
+    .articles {
+        background-color: white;
+        width: 30%;
+        margin-right: 30px;
+        margin-left: 10%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        height: auto;
+        -webkit-border-radius: 5px;
+        -o-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -moz-border-radius: 10px;
+        box-shadow: 8px 8px 8px #193300;
+        -webkit-box-shadow: 8px 8px 8px #193300;
+        -ms-box-shadow: 8px 8px 8px #193300;
+        -moz-box-shadow: 8px 8px 8px #193300;
+        -o-box-shadow: 8px 8px 8px #193300;
+    }
+    
+    .articles {
+        position: relative;
+        border: 1px solid #333;
+        margin: 2%;
+        overflow: hidden;
+        width: 540px;
+    }
+    
+    .img:hover {
+        zoom: 1.01;
+        -moz-transform: scale(1.01);
+    }
+    
+    .article_hit {
+        padding: 10px;
+    }
+    
+    .articl_title {
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+    }
+    
+    .main_content {
+        width: 90%;
+        margin: 5px;
+        margin-left: 16%;
+        margin-top: -3.2%;
+        padding: 50px 50px 0px;
+    }
+    
+    .articl_title {
+        text-align: center;
+        font-weight: bold;
+        border-style: solid;
+        border-width: 1px;
+        background-color: rgba(0, 26, 0, 0.8);
+        color: white;
+        margin-top: 10px;
+        -webkit-border-radius: 5px;
+        -o-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -moz-border-radius: 5px;
+    }
+    
+    .author,
+    .pulishe_date {
+        margin-left: 30px;
+        margin-bottom: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    /* creates the border for the author and date published article*/
+    
+    .divider {
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 20%;
+        -webkit-border-radius: 5px;
+        -o-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -moz-border-radius: 5px;
+        color: white;
+    }
+    
+    .user {
+        text-transform: capitalize;
+    }
+    /* the home page that shows the user name when they login*/
+    
+    .profile {
+        margin-top: 2%;
+        background-color: white;
+        height: auto;
+        display: block;
+        margin-left: -6px;
+        border-style: solid;
+        box-shadow: 5px 5px 5px black;
+        -webkit-box-shadow: 5px 5px 5px black;
+        -moz-box-shadow: 5px 5px 5px black;
+        -o-box-shadow: 5px 5px 5px black;
+        background: rgba(0, 26, 0, 0.9);
+        color: white;
+    }
+    /* random quotes display to user homepage */
+    
+    .profile,
+    .item1 p {
+        width: 70%;
+        margin-left: 15%;
+        display: block;
+        border-radius: 17%;
+        border-style: solid;
+        box-shadow: 5px 5px 5px black;
+    }
+    /* the home page that shows the user name when they login*/
+    
+    .profile p {
+        font-size: 18px;
+        padding: 30px 10px 30px;
+        text-align: center;
+    }
+    /* random item of quotes to be display to the user when they login*/
+    
+    .item1 {
+        display: none;
+    }
+    
+    .item1 p {
+        text-align: center;
+        font-size: 16px;
+        padding: 10px 10px 10px;
+        background: white;
+        color: black;
+    }
+    /* articles animation */
+    
+    @media only screen and (min-width:150px) and (max-width:680px) {
+        .main_content {
+            width: 80%;
+            margin-left: -5%;
+        }
+        .articles {
+            width: 160%;
+            margin-left: -7%;
+        }
+        .author {
+            float: none;
+            margin-left: 0px;
+            margin-bottom: 0px;
+        }
+        .pulishe_date {
+            float: none;
+            margin-left: 0px;
+            margin-bottom: 0px;
+        }
+    }
+    
+    @media (min-width: 576px) {
+        .main_content {
+            width: 80%;
+        }
+        .articles {
+            width: 90%;
+            margin-left: -10px;
+        }
+        .author {
+            float: none;
+            margin-left: 0px;
+            margin-bottom: 0px;
+        }
+        .pulishe_date {
+            float: none;
+            margin-left: 0px;
+            margin-bottom: 0px;
+        }
+    }
