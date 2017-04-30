@@ -1,13 +1,5 @@
 /* controls the sticky menu bar*/
-$(function() {
-    $(window).scroll(function() {
-        if ($(this).scrollTop() >= 290) {
-            $('nav.main-nav').addClass("stickytop");
-        } else {
-            $('nav.main-nav').removeClass("stickytop");
-        }
-    });
-});
+
 /* responsive menu of the menu bar*/
 function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -31,7 +23,7 @@ function myFunction() {
 
 $(function() {
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 390) {
+        if ($(this).scrollTop() > 90) {
             $('nav.main-nav').addClass('stickytop');
         } else {
             $('nav.main-nav').removeClass('stickytop');

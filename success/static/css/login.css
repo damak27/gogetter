@@ -10,7 +10,7 @@
 
 .back {
     height: 1000px;
-    background-color: rgba(0, 26, 0, 0.8);
+    background-color: rgba(0, 0, 128, 0.9);
 }
 
 
@@ -22,7 +22,7 @@
     border-radius: 10px;
     border-radius: 10px;
     margin-bottom: 0%;
-    background-color: rgba(0, 26, 0, 0.8);
+    background-color: rgba(0, 0, 128, 0.6);
     height: auto;
     width: 500px;
     display: block;
@@ -39,7 +39,7 @@
     margin-bottom: 2%;
     border: solid;
     border-width: 1px;
-    background-color: rgba(0, 26, 0, 0.8);
+    background-color: rgba(0, 0, 128, 1);
     color: white;
 }
 
@@ -50,7 +50,7 @@
     padding: 5px 6px 8px;
     border: solid;
     border-width: 0.2px;
-    background-color: rgba(0, 26, 0, 0.8);
+    background-color: rgba(0, 0, 128, 0.1);
 }
 
 button a:link {

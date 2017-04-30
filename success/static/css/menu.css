@@ -3,7 +3,7 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(0, 26, 0, 1);
+    background-color: rgba(0, 0, 128, 0.9);
     height: 60px;
     z-index: 1000;
 }
@@ -20,7 +20,7 @@ ul.topnav li {
     padding: 2px 2px 2px;
     border-left-style: solid;
     border-right-style: solid;
-    border-color: rgba(0, 26, 0, 1);
+    border-color: rgba(0, 0, 128, 0.9);
     border-width: 1px;
     margin-left: 20px;
 }
@@ -62,7 +62,7 @@ ul.topnav li a {
 }
 
 ul.topnav li a:hover {
-    background-color: green;
+    background-color: blue;
     color: black;
 }
 
@@ -110,10 +110,12 @@ ul.topnav li.icon {
     border-top-style: none;
     border-bottom-style: none;
 }
+
 .topnav {
     border-top-style: none;
     border-bottom-style: none;
 }
+
 nav.main-nav.stickytop {
     position: fixed;
     top: 0;
@@ -141,6 +143,6 @@ nav.main-nav.stickytop {
     }
     ul.topnav.responsive li a {
         display: block;
-        text-align:center;
+        text-align: center;
     }
 }
