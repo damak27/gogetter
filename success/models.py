@@ -43,14 +43,12 @@ class Quotes(models.Model):
     quote_by = models.CharField(max_length=250,default="ebong")
     def __str__(self):
         return self.quote_by
-"""
+
 # User model profile
-class Userprofile(models.Model):
-    user_name =models.CharField(auth=user)
-    gender =models.BooleanField()
-    country =models.CharField()
-"""
-     
+class Userprofile(models.Model): 
+    country =models.CharField(max_length=250)
+    def __str__(self):
+            return self.country
 
 
     

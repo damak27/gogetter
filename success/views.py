@@ -1,5 +1,5 @@
 from django.views import generic
-from .models import Articles,Contact,Quotes
+from .models import Articles,Contact,Quotes,Userprofile
 from django.views.generic import View
 from .forms import Creat_account
 from django.shortcuts import render,redirect
@@ -20,6 +20,11 @@ def AboutView(request):
 class DetailView(generic.DetailView):
     model = Articles
     template_name ='success/detail_page.html'
+    
+            # views  for  user login`
+class profileAccount(generic.ListView):
+    model = Userprofile
+    template_name ='success/user_account/profile_account.html'
 # View To Create  User account
 class CreateAccount(View):
     form_class = Creat_account
@@ -87,4 +92,3 @@ class homeView(generic.ListView):
     def get_context_data(self,**kwargs):
         contex = super(homeView,self).get_context_data(**kwargs)
         contex['quote']=Quotes.objects.order_by('quote')
-        return contex

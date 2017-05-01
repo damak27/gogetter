@@ -1,4 +1,7 @@
-/* controls the sticky menu bar*/
+/* for profile)_account.hmtl SideNav*/
+
+
+
 
 /* responsive menu of the menu bar*/
 function myFunction() {
@@ -89,8 +92,3 @@ $(function() {
         $('.item1').eq(random).show();
     }
 });
-/* popup*/
-function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-}

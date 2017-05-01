@@ -10,7 +10,7 @@
 <div class="profile">
     {% if user.is_authenticated %}
 
-    <p>Is a pleasure to have you <span class="user">{{ user.get_username }}.</span> <a href="/">VIEW PROFILE</a> </p>
+    <p> <span class="user">{{ user.get_username }}'s</span> <a href="{% url 'success:profile_account' %}">ACCOUNT</a> </p>
     <!-- Random motivation quotes to display to user when they login-->
 
 
@@ -29,7 +29,7 @@
 
 
 {% endfor %} {% else %}
-<p> Login to get connected with investors ,startups and opportunities in Africa <br> Your success is our priority .<a href="{% url 'success:login' %} ">Login</a></p>{% endif %}
+<p> Login to get connected with investors ,startups and opportunities in Africa .<br> Your success is our priority .<a href="{% url 'success:login' %} ">Login</a></p>{% endif %}
 
 </div>
 

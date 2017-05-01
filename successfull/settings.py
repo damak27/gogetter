@@ -122,7 +122,8 @@ STATIC_URL = '/static/'
 #root directry to save media files 
 # redirects the logine to songs.index page 
 
-LOGIN_REDIRECT_URL = 'success:home'
+LOGIN_REDIRECT_URL = 'success:profile_account'
+
 
 # will direct the the user to home page upon logout
 LOGOUT_REDIRECT_URL = 'success:home'

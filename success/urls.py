@@ -23,5 +23,7 @@ urlpatterns = [
     url(r'ContactUsView/$',views.ContactUsView.as_view(),name='contacts'),
     # to view each objects in detail contact form details 
     url(r'(?P<pk>[0-9]+)/$',views.contact_listView.as_view(),name='contacts_list'),
+    # urls when user login 
+    url(r'profileAccount/$',views.profileAccount.as_view(),name='profile_account'),
 ]
 
