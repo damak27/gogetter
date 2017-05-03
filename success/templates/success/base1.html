@@ -59,7 +59,7 @@
                 {% if user.is_authenticated %} {% else %}
                 <li><a href='#'>CONTACT</a>
                     <ul>
-                        <li><a href='#'>MarketingTeam</a></li>
+                        <li><a href="{% url 'success:contact_add' %}">MarketingTeam</a></li>
                         <li><a href='#'>Other</a></li>
                     </ul>
                 </li>{% endif %}
