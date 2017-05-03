@@ -84,6 +84,7 @@ class contact_listView(generic.DetailView):
     template_name = 'success/contact_detailview.html'
     #Generic view to display home_page when user visit the site 
 
+
 class homeView(generic.ListView):
     template_name = 'success/home_page.html' 
     context_object_name="articles"   
@@ -92,3 +93,4 @@ class homeView(generic.ListView):
     def get_context_data(self,**kwargs):
         contex = super(homeView,self).get_context_data(**kwargs)
         contex['quote']=Quotes.objects.order_by('quote')
+        return contex

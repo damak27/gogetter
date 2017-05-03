@@ -38,32 +38,32 @@
 
     <div class="row ">
         {% for article in articles %}
-        <a href="{% url 'success:Detail_article' article.id %}">
-            <div class="col-md-5 col-sm-5 articles">
-                <article>
 
-                    <!-- Dymanic view of  news objects -->
+        <div class="col-md-5 col-sm-5 articles">
+            <article>
+
+                <!-- Dymanic view of  news objects -->
 
 
-                    <title>{{article.article_title}}</title>
+                <title>{{article.article_title}}</title>
 
-                    <content>
-                        <div class="articl_title">{{ article.article_title }}</div>
-                        {% if article.article_album %}
-                        <a href="{% url 'success:Detail_article' article.id %}"> <img class="img" src="{{ article.article_album.url }}" /></a>
+                <content>
+                    <div class="articl_title">{{ article.article_title }}</div>
+                    {% if article.article_album %}
+                    <a href="{% url 'success:Detail_article' article.id %}"> <img class="img" src="{{ article.article_album.url }}" /></a>
 
-                        {% endif %}
+                    {% endif %}
 
-                        <div class="article_hit">{ {article.article_hit }}</div>sss
-                        <div class="articl_title"><a href="{% url 'success:Detail_article' article.id %}">Read More</a></div>
-                    </content>
-                    <footer>
-                    </footer>
+                    <div class="article_hit">{{article.article_hit }}</div>sss
+                    <div class="articl_title"><a href="{% url 'success:Detail_article' article.id %}">Read More</a></div>
+                </content>
+                <footer>
+                </footer>
 
-                </article>
+            </article>
 
-            </div>{% endfor %} {% else %}
-            <h1> NO ARTICLES TO DISPLAY </h1>
+        </div>{% endfor %} {% else %}
+        <h1> NO ARTICLES TO DISPLAY </h1>
     </div>{% endif %}
 </div>
 </div>

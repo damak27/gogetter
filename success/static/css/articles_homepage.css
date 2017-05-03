@@ -12,7 +12,7 @@
         background-color: white;
         width: 30%;
         margin-right: 30px;
-        margin-left: 10%;
+        margin-left: -50%;
         margin-top: 10px;
         margin-bottom: 30px;
         height: auto;
@@ -116,7 +116,7 @@
     .profile,
     .item1 p {
         width: 70%;
-        margin-left: 12%;
+        margin-left: 14%;
         display: block;
         border-radius: 17%;
         border-style: solid;
