@@ -29,14 +29,18 @@
     display: block;
 }
 
+.bar1 {
+    width: 180px;
+}
+
 .input_form {
     margin: 10px;
     color: black;
+    margin-left: -30%;
 }
 
 .login_form .btn {
     float: left;
-    margin-left: 5%;
     margin-bottom: 2%;
     border: solid;
     border-width: 1px;
@@ -76,8 +80,8 @@ button {
 
 /* Login title*/
 
-.login_form h2 {
-    margin-left: 30%;
+.login_form h4 {
+    margin-left: -10%;
     color: white;
 }
 
@@ -120,8 +124,8 @@ button {
         margin-left: -10%;
         float: left;
     }
-    .login_form h2 {
-        margin-left: -15%;
+    .login_form h4 {
+        margin-left: -20%;
     }
     .bottomsidebar2 {
         margin-top: -30%;

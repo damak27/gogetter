@@ -19,6 +19,7 @@
 
 
 <body>
+    <h3> Creating As Others Account</h3>
     <form action="" method="post" enctype="multipart/form-data">
         {% csrf_token %} {% for field in form %}
         <div class="error">{{ field.errors }}</div>
@@ -29,9 +30,7 @@
         <button type="submit">submit</button>
     </form>
 
-    <div class="popup" onclick="myFunction()">Click me to toggle the popup!
-        <span class="popuptext" id="myPopup">A Simple Popup!</span>
-    </div>
+
 </body>
 
 </html>

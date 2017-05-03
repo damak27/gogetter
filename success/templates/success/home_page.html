@@ -48,13 +48,13 @@
                     <title>{{article.article_title}}</title>
 
                     <content>
-                        <div class="articl_title">{{article.article_title}}</div>
+                        <div class="articl_title">{{ article.article_title }}</div>
                         {% if article.article_album %}
                         <a href="{% url 'success:Detail_article' article.id %}"> <img class="img" src="{{ article.article_album.url }}" /></a>
 
                         {% endif %}
 
-                        <div class="article_hit">{{article.article_hit}}</div>
+                        <div class="article_hit">{ {article.article_hit }}</div>sss
                         <div class="articl_title"><a href="{% url 'success:Detail_article' article.id %}">Read More</a></div>
                     </content>
                     <footer>

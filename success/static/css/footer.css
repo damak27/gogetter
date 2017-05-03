@@ -1,5 +1,5 @@
 .footer1 {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 150, 0.9);
     height: 200px;
     width: 100%;
     margin-bottom: 0px;
@@ -20,11 +20,11 @@
     margin-bottom: 30px;
     margin-left: 2%;
     clear: left;
-    box-shadow: 8px 8px 8px rgba(0, 0, 128, 0.4);
-    -webkit-box-shadow: 8px 8px 8px rgba(0, 0, 128, 0.4);
-    -ms-box-shadow: 8px 8px 8px rgba(0, 0, 128, 0.4);
-    -moz-box-shadow: 8px 8px 8px rgba(0, 0, 128, 0.4);
-    -o-box-shadow: 8px 8px 8px rgba(0, 0, 128, 0.4);
+    box-shadow: 8px 8px 8px rgba(0, 0, 150, 0.4);
+    -webkit-box-shadow: 8px 8px 8px rgba(0, 0, 150, 0.4);
+    -ms-box-shadow: 8px 8px 8px rgba(0, 0, 150, 0.4);
+    -moz-box-shadow: 8px 8px 8px rgba(0, 0, 150, 0.4);
+    -o-box-shadow: 8px 8px 8px rgba(0, 0, 150, 0.4);
     z-index: 100%;
     border-width: 0.5px;
     border-style: solid;

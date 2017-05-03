@@ -1,5 +1,5 @@
 from django.views import generic
-from .models import Articles,Contact,Quotes,Userprofile
+from .models import Articles,Contact,Quotes,Pirate
 from django.views.generic import View
 from .forms import Creat_account
 from django.shortcuts import render,redirect
@@ -23,7 +23,7 @@ class DetailView(generic.DetailView):
     
             # views  for  user login`
 class profileAccount(generic.ListView):
-    model = Userprofile
+    model = Pirate
     template_name ='success/user_account/profile_account.html'
 # View To Create  User account
 class CreateAccount(View):

@@ -64,7 +64,7 @@
         font-weight: bold;
         border-style: solid;
         border-width: 1px;
-        background-color: rgba(0, 0, 155, 0.8);
+        background-color: rgba(0, 0, 150, 0.8);
         color: white;
         margin-top: 10px;
         -webkit-border-radius: 5px;
@@ -103,13 +103,12 @@
         background-color: white;
         height: auto;
         display: block;
-        margin-left: -6px;
         border-style: solid;
         box-shadow: 5px 5px 5px black;
         -webkit-box-shadow: 5px 5px 5px black;
         -moz-box-shadow: 5px 5px 5px black;
         -o-box-shadow: 5px 5px 5px black;
-        background: rgba(0, 0, 155, 0.8);
+        background: rgba(0, 0, 150, 1);
         color: white;
     }
     /* random quotes display to user homepage */
@@ -117,7 +116,7 @@
     .profile,
     .item1 p {
         width: 70%;
-        margin-left: 15%;
+        margin-left: 12%;
         display: block;
         border-radius: 17%;
         border-style: solid;

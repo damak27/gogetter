@@ -26,7 +26,8 @@ SECRET_KEY = 'jd4y^w(&+d=b0kkk_bj71xt*pj*n3lmwzdfz084y6%pe9@vkph'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+#defining the user profile model
+AUTH_PROFILE_MODULE ='success.Pirate'
 
 # Application definition
 

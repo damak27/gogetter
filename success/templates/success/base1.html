@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{% static 'css/detail.css' %}">
     <link rel="stylesheet" href="{% static 'css/menu.css' %}">
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about_us.css' %}">
     <link rel="stylesheet" href="{% static 'css/footer.css' %}">
     <link rel='stylesheet' href="{% static 'css/articles_homepage.css' %}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -22,134 +23,81 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
     <script src="{% static 'script/javascript.js' %}">
     </script>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
-
-    <body>
-        <div class="body1">
-            <div class="se-pre-con"></div>
-            <nav class="main-nav">
-                <ul class="topnav" id="myTopnav">
-                    <li><a class="" href="{% url 'success:home' %}">HOME</a></li>
-                    <li><a href="">BLOGS</a></li>
-                    {% if user.is_authenticated %}
-                    <li><a class="" href="{% url 'success:profile_account' %}">MYACCOUNT</a></li>
-                    {% else %}
-                    <li><a href="{% url 'success:contact_add' %}">CONTACT</a></li>{% endif %}
+    <nav id='cssmenu'>
+        <div class="logo"><a href="">GOGETTERS</a></div>
+        <div id="head-mobile"></div>
+        <div class="button"></div>
+        <ul>
+            <li><a href="{% url 'success:home' %}">HOME</a></li>
+            <li><a href="{% url 'success:about_us' %}">ABOUT</a></li>
+            <li><a href='#'>GOGETTER</a>
+                <ul>
                     <li>
-                        <a href="{% url 'success:about_us' %}">ABOUT</a></li>
+                        <a href='#'>FINANCE</a>
+                        <ul>
+                            <li><a href='#'>investors</a></li>
+                            <li><a href='#'>Startups</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='#'>Businessmagnet</a>
 
-                    {% if user.is_authenticated %} {% else %}
-                    <li class="account "><a href="{% url 'success:login' %} ">LOGIN</a></li>{% endif %}
-                    <li class="icon ">
-                        <a href="javascript:void(0); " onclick="myFunction() ">&#9776;</a>
                     </li>
                 </ul>
-            </nav>
+            </li>
+            <li><a href='#'>MARKET</a>
+                <ul>
+                    <li><a href='#'>Africa</a></li>
+                    <li><a href='#'>Global</a></li>
+                </ul>
+
+            </li>
+            <li><a href='#'>PRODUCTS</a>
 
 
-            <div class="container">
-                <br>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
 
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                        <li data-target="#myCarousel" data-slide-to="3"></li>
-                        <li data-target="#myCarousel" data-slide-to="4"></li>
-                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li><a href='#'>BUSINESSTODAY</a></li>
+                {% if user.is_authenticated %} {% else %}
+                <li><a href='#'>CONTACT</a>
+                    <ul>
+                        <li><a href='#'>MarketingTeam</a></li>
+                        <li><a href='#'>Other</a></li>
+                    </ul>
+                </li>{% endif %}
+                <li><a href='#'>GOGETTERITSOLUTION</a></li>
+                {% if user.is_authenticated %} {% else %}
+                <li><a href='#'>LOGIN</a>
 
-                    </ol>
+                    <ul>
+                        <li><a href='#'>Investor</a></li>
+                        <li><a href='#'>StartUp</a></li>
+                        <li><a href="{% url 'success:login' %}">Other</a></li> {% endif %}
+                    </ul>
 
-                    <!-- Wrapper for slides -->
-                    <div id="margin-top">
+        </ul>
 
-                        <div class="carousel-inner  margin-inner" role="listbox">
-                            <div class="item active">
-                                <p> INNOVATIVE BUSINESS</p>
-                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                <div class="carousel-caption">
-                                </div>
-                            </div>
-
-                            <div class="item ">
+    </nav>
 
 
-                                <p>INNOVATIVE STARTUP </p>
-                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-
-                                <div class="carousel-caption">
-
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <p> INNOVATIVE IDEA</p>
-                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                <div class="carousel-caption">
 
 
-                                </div>
-                            </div>
 
-                            <div class="item">
-                                <p>MARKET PORTENTIAL </p>
-                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                <div class="carousel-caption">
-
-
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <p>CAN CHANGE LIVES </p>
-
-                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                <div class="carousel-caption">
-
-
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <p>BRING GOOD THINGS TO LIGHT</p>
-
-
-                                <div class="carousel-caption">
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <script>
-                        </script>
 
 </header>
 
 
 <body>
+    <div class="body1">
 
 
-    {% block content %} {% endblock %}
-    <div class="news">
-        <h4> NEWS</h4>
-    </div>
-    <footer class="footer1">
-        <div class="footer">
-
+        {% block content %} {% endblock %}
+        <div class="news">
+            <h4> NEWS</h4>
         </div>
-    </footer>
+        <footer class="footer1">
+            <div class="footer">
+
+            </div>
+        </footer>
 
 </body>
 

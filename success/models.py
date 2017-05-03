@@ -1,7 +1,11 @@
 from __future__ import unicode_literals
 from django.db import models
 from django.utils import timezone
+# where to forward the user when ever they add content
 from django.core.urlresolvers import reverse
+#importing user 
+from django .contrib.auth.models import User
+
 # This model is for general article uploaded by admin or authorized users .
 class Articles(models.Model):
     author_admin =models.ForeignKey('auth.User')
@@ -44,9 +48,13 @@ class Quotes(models.Model):
     def __str__(self):
         return self.quote_by
 
-# User model profile
-class Userprofile(models.Model): 
+# User profile model
+class  Pirate(models.Model): 
+    account = models.OneToOneField(User)
     country =models.CharField(max_length=250)
+    @models.permalink
+    def get_absolute_url(self):
+        return('view_pirate',None,{'username':self.account.username})
     def __str__(self):
             return self.country
 
