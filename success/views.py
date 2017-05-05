@@ -55,7 +55,7 @@ class CreateAccount(View):
                 if user.is_active:
                     login(request, user)
                     # The user will be redirected to this page on successful account creation 
-                    return redirect('success:home')
+                    return redirect('success:profile_account')
         return render(request,self.template_name,{'form':form})
   # for creating the user contact form       
 class  ContactView(CreateView):

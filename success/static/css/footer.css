@@ -77,4 +77,7 @@
         margin-bottom: 20px;
         border-width: 0px;
     }
+    .section {
+        margin-left: 10%;
+    }
 }

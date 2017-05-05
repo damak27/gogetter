@@ -17,15 +17,15 @@
 
     {% for quotes in quote %}:
 
-    <div class="item1">
-
-        <p>
-            <span class="user">{{ user.get_username }}: </span>{{ quotes.quote }} <br> Quote_by: {{ quotes.quote_by }}
-        </p>
-    </div>
 
 </div>
 
+<div class="item1">
+
+    <p>
+        <span class="user">{{ user.get_username }}: </span>{{ quotes.quote }} <br> Quote_by: {{ quotes.quote_by }}
+    </p>
+</div>
 
 
 {% endfor %} {% else %}

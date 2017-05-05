@@ -90,7 +90,7 @@
         -o-border-radius: 5px;
         -ms-border-radius: 5px;
         -moz-border-radius: 5px;
-        color: white;
+        color: black;
     }
     
     .user {
@@ -104,23 +104,30 @@
         height: auto;
         display: block;
         border-style: solid;
-        box-shadow: 5px 5px 5px black;
-        -webkit-box-shadow: 5px 5px 5px black;
-        -moz-box-shadow: 5px 5px 5px black;
-        -o-box-shadow: 5px 5px 5px black;
-        background: rgba(0, 0, 150, 1);
-        color: white;
+        border-color: white;
+        box-shadow: -2px -5px 2px rgba(0, 0, 150, 0.8);
+        -webkit-box-shadow: -2px -5px 2px rgba(0, 0, 150, 0.8);
+        -moz-box-shadow: -2px -5px 2px rgba(0, 0, 150, 0.8);
+        -o-box-shadow: -2px -5px 2px rgba(0, 0, 150, 0.8);
+        background: white;
+        color: black;
+        width: 65%;
+        margin-left: 16.0%;
+        width: 65%;
+        margin-left: 16.5%;
+        display: block;
+        border-radius: 50%;
     }
     /* random quotes display to user homepage */
     
-    .profile,
     .item1 p {
-        width: 70%;
-        margin-left: 13.9%;
-        display: block;
-        border-radius: 17%;
-        border-style: solid;
-        box-shadow: 5px 5px 5px black;
+        margin-top: 1%;
+        box-shadow: 2px 9px 2px rgba(0, 0, 150, 0.8);
+        -webkit-box-shadow: 2px 9px 2px rgba(0, 0, 150, 0.8);
+        -moz-box-shadow: 2px 9px 2px rgba(0, 0, 150, 0.8);
+        -o-box-shadow: 2px 9px 2px rgba(0, 0, 150, 0.8);
+        width: 40%;
+        margin-left: 30%;
     }
     /* the home page that shows the user name when they login*/
     
