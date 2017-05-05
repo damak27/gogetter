@@ -1,12 +1,43 @@
 .footer1 {
-    background: rgba(0, 0, 150, 0.9);
-    height: 200px;
-    width: 100%;
     margin-bottom: 0px;
 }
 
 .footer {
     float: left;
+    background: rgba(0, 0, 150, 0.9);
+    height: auto;
+    width: 100%;
+}
+
+.section {
+    float: left;
+    padding: 20px 20px 20px;
+    margin-left: 5%;
+    color: white;
+}
+
+.section ul li {
+    list-style: none;
+}
+
+.section ul a:link {
+    text-decoration: none;
+}
+
+.section ul li a {
+    color: white;
+}
+
+.section ul li a:hover {
+    color: black;
+}
+
+.section ul h4 a {
+    color: white;
+}
+
+.section ul h4 a:hover {
+    color: black;
 }
 
 
