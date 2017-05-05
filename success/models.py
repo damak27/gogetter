@@ -5,6 +5,7 @@ from django.utils import timezone
 from django.core.urlresolvers import reverse
 #importing user 
 from django .contrib.auth.models import User
+from django.dispatch  import receiver
 
 # This model is for general article uploaded by admin or authorized users .
 class Articles(models.Model):
@@ -49,15 +50,24 @@ class Quotes(models.Model):
         return self.quote_by
 
 # User profile model
-class  Pirate(models.Model): 
-    account = models.OneToOneField(User)
-    country =models.CharField(max_length=250)
-    @models.permalink
-    def get_absolute_url(self):
-        return('view_pirate',None,{'username':self.account.username})
-    def __str__(self):
-            return self.country
+class UserProfile(models.Model):
+    user = models.OneToOneField(User)
+    bio = models.TextField(max_length=500,null=True,blank=True)
 
+    def __str__(self):
+        return self.user.username
+        """
+from.django.db.models.signals import post_save
+from.dispatch import receiver
+@receiver(post_save,sender=user)
+def create_profile(sender,instance,created,**kwargs):
+    #Checks if profiel created 
+    if created:
+        profile,new = UserProfile.objects.get_or_create(user=instance)
+
+
+
+"""
 
     
 

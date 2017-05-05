@@ -25,5 +25,13 @@ urlpatterns = [
     url(r'(?P<pk>[0-9]+)/$',views.contact_listView.as_view(),name='contacts_list'),
     # urls when user login 
     url(r'profileAccount/$',views.profileAccount.as_view(),name='profile_account'),
+    #Profile Urls
+
+
+    #url(r'profile/(?p<profile_id>\d+/$','user_profile.views.profile');
+    #url(r'update_profile/(?p<profile_id>\d+/$','user_profile.views.update_profile');
+    #url(r'your_profile/(?p<profile_id>\d+/$','user_profile.views.your_profile');
+
+
 ]
 

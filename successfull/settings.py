@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 #defining the user profile model
-AUTH_PROFILE_MODULE ='success.Pirate'
+AUTH_PROFILE_MODULE ='success.Profile'
 
 # Application definition
 
