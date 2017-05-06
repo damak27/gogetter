@@ -10,7 +10,7 @@
 <div class="profile">
     {% if user.is_authenticated %}
 
-    <p> <span class="user">{{ user.get_username }}'s</span> <a href="{% url 'success:profile_account' %}">ACCOUNT</a> </p>
+    <p> <a href="{% url 'success:profile_account' %}">YourAccount</a> &nbsp;<span class="user">{{ user.get_username }}</span> </p>
     <!-- Random motivation quotes to display to user when they login-->
 
 
@@ -55,7 +55,7 @@
 
                     {% endif %}
 
-                    <div class="article_hit">{{article.article_hit }}</div>sss
+                    <div class="article_hit">{{article.article_hit }}</div>
                     <div class="articl_title"><a href="{% url 'success:Detail_article' article.id %}">Read More</a></div>
                 </content>
                 <footer>
