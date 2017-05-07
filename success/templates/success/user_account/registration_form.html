@@ -22,7 +22,7 @@
 <body class="body">
     <p class="p">Create BusinessOpportunist Account </p>
     <form action="" method="post" enctype="multipart/form-data">
-        {% csrf_token %} {% for field in form %}
+        <a class="label" href="{% url 'success:home' %}">Home</a> {% csrf_token %} {% for field in form %}
         <div class="error">{{ field.errors }}</div>
 
         <label class="label">{{ field.label_tag }} </label>
