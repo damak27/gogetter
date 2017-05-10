@@ -25,6 +25,8 @@ urlpatterns = [
     url(r'(?P<pk>[0-9]+)/$',views.contact_listView.as_view(),name='contacts_list'),
     # urls when user login 
     url(r'profileAccount/$',views.profileAccount.as_view(),name='profile_account'),
+    #Security urls
+    url(r'Security/$',views.Security,name='Security'),
     #Profile Urls
 
 

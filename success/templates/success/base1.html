@@ -24,7 +24,7 @@
     <script src="{% static 'script/javascript.js' %}">
     </script>
     <nav id='cssmenu'>
-        <div class="logo"><a href="">GOGETTERS</a></div>
+        <div class="logo"><a href="">GOGETTERBIZ</a></div>
         <div id="head-mobile"></div>
         <div class="button"></div>
         <ul>
@@ -44,10 +44,13 @@
                     </li>
                 </ul>
             </li>
-            <li><a href='#'>MARKET</a>
+            <li><a href='#'>PRIORITIES</a>
                 <ul>
-                    <li><a href='#'>Africa</a></li>
-                    <li><a href='#'>Global</a></li>
+
+                    <li>
+                        <a href="{% url 'success:Security' %}">Security</a></li>
+                    <li><a href="">Possiblities</a></li>
+                    <li> <a href="">Partnership</a></li>
                 </ul>
 
             </li>
@@ -122,10 +125,10 @@
                 <div class="section">
                     <ul>
 
-                        <h4> Our Missions</h4>
+                        <h4> Our Priorities</h4>
 
                         <li>
-                            <a href="">Security</a></li>
+                            <a href="{% url 'success:Security' %}">Security</a></li>
                         <li><a href="">Possiblities</a></li>
                         <li> <a href="">Partnership</a></li>
                     </ul>

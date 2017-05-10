@@ -17,7 +17,10 @@ from django.shortcuts import render_to_response
 def AboutView(request):
      content = ""#home_detail.objects.all()     
      return render(request,"success/about_us.html",{'content':content})
-
+# Sucurity view
+def Security(request):
+    content=""
+    return render(request, "success/gogetter_static_pages/security.html",{'content':content})
 #To Display detail of the Article objects in home page
 class DetailView(generic.DetailView):
     model = Articles
