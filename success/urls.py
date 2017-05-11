@@ -27,6 +27,8 @@ urlpatterns = [
     url(r'profileAccount/$',views.profileAccount.as_view(),name='profile_account'),
     #Security urls
     url(r'Security/$',views.Security,name='Security'),
+    url(r'Posibility/$',views.Posiblity,name='Posibility'),
+
     #Profile Urls
 
 

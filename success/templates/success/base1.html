@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
     <link rel="stylesheet" href="{% static 'css/about_us.css' %}">
     <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/gogetter_static_page/security.css' %}">
     <link rel='stylesheet' href="{% static 'css/articles_homepage.css' %}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -49,7 +50,7 @@
 
                     <li>
                         <a href="{% url 'success:Security' %}">Security</a></li>
-                    <li><a href="">Possiblities</a></li>
+                    <li><a href="{% url 'success:Posibility' %}">Possiblities</a></li>
                     <li> <a href="">Partnership</a></li>
                 </ul>
 
@@ -129,7 +130,7 @@
 
                         <li>
                             <a href="{% url 'success:Security' %}">Security</a></li>
-                        <li><a href="">Possiblities</a></li>
+                        <li><a href="{% url 'success:Posibility' %}">Possibilities</a></li>
                         <li> <a href="">Partnership</a></li>
                     </ul>
                 </div>

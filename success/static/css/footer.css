@@ -61,6 +61,7 @@
     border-width: 0.5px;
     border-style: solid;
     border-radius: 10px;
+    border-color: rgba(0, 0, 150, 0.8);
     -webkit-border-radius: 10px;
     -o-border-radius: 10px;
     -moz-border-radius: 10px;

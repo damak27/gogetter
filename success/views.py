@@ -19,8 +19,12 @@ def AboutView(request):
      return render(request,"success/about_us.html",{'content':content})
 # Sucurity view
 def Security(request):
-    content=""
+    content = ""
     return render(request, "success/gogetter_static_pages/security.html",{'content':content})
+def Posiblity(request):
+    content = ""
+    return render(request, "success/gogetter_static_pages/posibility.html",{'content':content})
+
 #To Display detail of the Article objects in home page
 class DetailView(generic.DetailView):
     model = Articles
