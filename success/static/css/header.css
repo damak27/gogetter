@@ -9,6 +9,10 @@ header {
     background-image: url('../images/back1.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    -ms-background-attachment: fixed;
     margin-top: -10px;
     max-width: auto;
     -webkit-background-size: cover;

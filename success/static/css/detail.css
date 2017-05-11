@@ -1,9 +1,8 @@
 .article-img img {
-    width: 80%;
+    width: 85%;
     height: 350px;
     margin-left: 10%;
     margin-top: 5%;
-    opacity: 0.6;
 }
 
 .art-auth img {
@@ -12,7 +11,8 @@
     -o-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    width: 90px;
+    width: 50px;
+    float: left;
 }
 
 .art-auth p {
@@ -21,6 +21,7 @@
 
 .detail-container h4 {
     text-align: center;
+    margin-top: -25px;
 }
 
 .art-content {
@@ -40,36 +41,54 @@
 
 .detail-container {
     background-color: white;
-    width: 75%;
-    margin-left: 10%;
-    margin-top: 10%;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    -webkit-border-radius: 10%;
-    -moz-border-radius: 10px;
-    -o-border-radius: 10px;
-    -ms-border-radius: 10px;
+    width: 55%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    float: left
+}
+
+.ad {
+    float: left;
+    width: 30%;
+    background-color: black;
+    margin-top: 5%;
+    margin-left: 8%;
 }
 
 .art-publish {
     margin-left: 20%;
 }
 
-@media only screen and(min-width:150px) and (max-width:700px) {
+@media only screen and(min-width:150px) and (max-width:680px) {
     .detail-container {
         background-color: white;
         width: 100%;
         margin-left: 0px;
+        clear: left;
+    }
+    .ad {
+        clear: left;
     }
 }
 
 @media screen and (max-width:680px) {
     .article-img img {
         height: 150px;
+        margin-left: 10px;
     }
     .art-publish {
         margin-left: 70px;
         width: 60%;
+    }
+    .detail-container {
+        background-color: white;
+        width: 100%;
+        margin-left: 0px;
+        clear: left;
+    }
+    .ad {
+        clear: left;
+        width: 80%;
     }
 }
