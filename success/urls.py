@@ -28,6 +28,7 @@ urlpatterns = [
     #Security urls
     url(r'Security/$',views.Security,name='Security'),
     url(r'Posibility/$',views.Posiblity,name='Posibility'),
+    url(r'Partner/$',views.Partner,name='Partner'),
 
     #Profile Urls
 

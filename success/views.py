@@ -21,6 +21,9 @@ def AboutView(request):
 def Security(request):
     content = ""
     return render(request, "success/gogetter_static_pages/security.html",{'content':content})
+def  Partner(request):
+    content = ""
+    return render(request, "success/gogetter_static_pages/partnership.html",{'content':content})
 def Posiblity(request):
     content = ""
     return render(request, "success/gogetter_static_pages/posibility.html",{'content':content})
