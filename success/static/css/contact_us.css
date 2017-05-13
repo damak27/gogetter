@@ -174,7 +174,7 @@ field {
         -webkit-border-radius: 80%;
         -moz-border-radius: 80%;
         -o-border-radius: 80%;
-        margin-left: -1%;
+        margin-left: 0%;
         display: block
     }
     .circle {
@@ -182,14 +182,17 @@ field {
     }
     .p {
         font-size: 14px;
-        width: 200px;
-        border-radius: 70%;
-        -webkit-border-radius: 70%;
-        -moz-border-radius: 70%;
-        -o-border-radius: 70%;
-        color: black
+        width: 75%;
+        border-radius: 10%;
+        -webkit-border-radius: 10%;
+        -moz-border-radius: 10%;
+        -o-border-radius: 10%;
+        color: white;
+        padding: 10px 20px 20px;
+        margin-left: 50px;
     }
     .p1 {
-        margin-top: -60%;
+        margin-top: -65%;
+        margin-left: 10%;
     }
 }
