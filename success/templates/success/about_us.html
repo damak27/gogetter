@@ -51,21 +51,20 @@
 
                 <li><a href='#'>BUSINESSTODAY</a></li>
                 {% if user.is_authenticated %} {% else %}
-                <li><a href='#'>CONTACT</a>
-                    <ul>
-                        <li><a href='#'>MarketingTeam</a></li>
-                        <li><a href='#'>Other</a></li>
-                    </ul>
-                </li>{% endif %}
-                <li><a href='#'>GOGETTERITSOLUTION</a></li>
-                {% if user.is_authenticated %} {% else %}
-                <li><a href='#'>LOGIN</a>
+                <li><a href='#'>CONTACT</a> ul>
+                    <li><a href="{% url 'success:contact_add' %}">MarketingTeam</a></li>
+                    <li><a href="{% url 'success:Partner' %}">Other</a></li>
+        </ul>
+        </li>{% endif %}
+        <li><a href='#'>GOGETTERITSOLUTION</a></li>
+        {% if user.is_authenticated %} {% else %}
+        <li><a href='#'>LOGIN</a>
 
-                    <ul>
-                        <li><a href='#'>Investor</a></li>
-                        <li><a href='#'>StartUp</a></li>
-                        <li><a href="{% url 'success:login' %}">Other</a></li> {% endif %}
-                    </ul>
+            <ul>
+                <li><a href='#'>Investor</a></li>
+                <li><a href='#'>StartUp</a></li>
+                <li><a href="{% url 'success:login' %}">Other</a></li> {% endif %}
+            </ul>
 
     </nav>
 </header>
