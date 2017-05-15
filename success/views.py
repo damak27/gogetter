@@ -1,17 +1,29 @@
 from django.views import generic
 from success.models import Articles,Contact,Quotes,UserProfile
 from django.views.generic import View
-from success.forms import Creat_account #,UserProfileForm
+from success.forms import Creat_account ,UserProfileForm
 from django.shortcuts import render,redirect
+from django.shortcuts import HttpResponseRedirect
+
 from django.contrib.auth import authenticate, login 
 from django.views.generic.edit import CreateView,UpdateView,DeleteView
 # this will redirect you to a another link  once your model field successfully field
 from  django.core.urlresolvers import reverse_lazy
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render_to_response
+from django.views.decorators.csrf import csrf_protect
+from django.contrib.auth.decorators import login_required
 
 
 
+
+
+#User profile view
+@login_required
+def user_profile(request):
+    userprofile = UserProfile.object.get(user=request.user)
+    form = UserProfileForm(initial={'bio':userprofile.bio})
+    return render_to_response('success/user_account/profile_account.html',{'form':form},RequestContext(request))
 
         # Home page for about us
 def AboutView(request):
@@ -106,12 +118,4 @@ class homeView(generic.ListView):
         contex = super(homeView,self).get_context_data(**kwargs)
         contex['quote']=Quotes.objects.order_by('quote')
         return contex
-        """
-# user profile view 
-@login_required
-def update_profile(request):
-    userprofile = UserProfile.object.get(user=request.user)
-    form = UserProfileForm(initial={'bio':userprofile.bio})
-    return render_to_response('success/update_profile.html',{'form':form},RequestContext(request))
 
-"""

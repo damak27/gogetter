@@ -53,13 +53,22 @@ class Quotes(models.Model):
 class UserProfile(models.Model):
     user = models.OneToOneField(User)
     bio = models.TextField(max_length=500,null=True,blank=True)
-    picture=models.ImageField(upload_to="profile_image",blank=True)
-    company=models.TextField(max_length=500,null=True)
-    company=models.BooleanField('company_type')
-
-
+    picture = models.ImageField(upload_to="profile_image",blank=True)
+    company = models.TextField(max_length=500,null=True)
+    field=models.BooleanField()
+    
     def __str__(self):
         return self.user.username
+from django.db.models.signals import post_save
+from  django.dispatch import receiver
+@receiver(post_save, sender=User)
+# Sending a new signal when ever a user is created to create a new profile
+def create_profile(sender,instance,created,**kwargs):
+    if created:
+        profile,new = UserProfile.objects.get_or_create(user=instance)
+        
+
+        
 
 
     

@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^',include('success.urls')),
+    
 ]
 # this will save the media files in the roo directry if on debuging stage 
 if  settings.DEBUG:

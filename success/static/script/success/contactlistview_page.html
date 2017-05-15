@@ -1,0 +1,12 @@
+<li>
+    <a class="" href="{% url 'success:home' %}">
+        Home</a>
+</li>
+<h2>
+    Thank You For contacting us </h2>
+<h4> List Of People who have contacted us</h4>
+<h1> You</h1> {% for contact in contact %} {{contact.First_name}} {% endfor %} {% if object_list %} {% for article in article %}
+<h4>{{article.article_album }} </h4>{{article.author}} {% endfor %} {% else %}
+<h1> There is No Article To Display </h1>
+
+{% endif %}

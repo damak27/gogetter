@@ -29,6 +29,9 @@ urlpatterns = [
     url(r'Security/$',views.Security,name='Security'),
     url(r'Posibility/$',views.Posiblity,name='Posibility'),
     url(r'Partner/$',views.Partner,name='Partner'),
+    url(r'profile/?<profile_id>\d+/$',views.user_profile, name="userprofile"),
+    url(r'profile/?<profile_id>\d+/$',views.update_profile, name="update_profile"),
+    url(r'profile/?<profile_id>\d+/$',views.user_profile, name="userprofile")
 
     #Profile Urls
 
