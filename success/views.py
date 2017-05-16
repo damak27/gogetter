@@ -4,7 +4,7 @@ from django.views.generic import View
 from success.forms import Creat_account ,UserProfileForm
 from django.shortcuts import render,redirect
 from django.shortcuts import HttpResponseRedirect
-
+from django.template import RequestContext
 from django.contrib.auth import authenticate, login 
 from django.views.generic.edit import CreateView,UpdateView,DeleteView
 # this will redirect you to a another link  once your model field successfully field
@@ -20,10 +20,17 @@ from django.contrib.auth.decorators import login_required
 
 #User profile view
 @login_required
-def user_profile(request):
-    userprofile = UserProfile.object.get(user=request.user)
-    form = UserProfileForm(initial={'bio':userprofile.bio})
-    return render_to_response('success/user_account/profile_account.html',{'form':form},RequestContext(request))
+def update_profile(request):
+    userprofile = UserProfile.objects.get(user=request.user)
+    form = UserProfileForm(initial={'bio':userprofile.bio,'picture':userprofile.picture,'company':userprofile.company,'field':userprofile.field})
+    return render_to_response('success/update_profile.html',{'form':form},RequestContext(request))
+@login_required
+def User_profile(request):
+    if request.method == 'POST':
+        form = UserProfileForm(request.POST)
+        if form.is_valid():
+            userprofile = UserProfile.objects.get(user=request.user)
+            
 
         # Home page for about us
 def AboutView(request):

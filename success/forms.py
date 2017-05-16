@@ -10,5 +10,5 @@ class Creat_account(forms.ModelForm):
 class UserProfileForm(forms.ModelForm):
     class Meta:
         model = UserProfile
-        exclude=('user')
-        fields =('bio','picture','company','field')
+        exclude=['user',]
+        fields =['bio','picture','company','field']
