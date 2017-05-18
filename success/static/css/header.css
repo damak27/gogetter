@@ -41,6 +41,10 @@ header {
     -o-border-radius: 10%;
     color: white;
     font-weight: bold;
+    box-shadow: 5px 10px 10px rgba(0, 0, 150, 0.5);
+    -webkit-box-shadow: 5px 10px 10px rgba(0, 0, 150, 0.5);
+    -moz-box-shadow: 5px 10px 10px rgba(0, 0, 150, 0.5);
+    -o-box-shadow: 5px 10px 10px rgba(0, 0, 150, 0.5);
 }
 
 a button {
