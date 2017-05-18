@@ -101,17 +101,13 @@
     
     .profile {
         margin-top: 2%;
-        background-color: white;
+        background-color: rgba(0, 0, 128, 0.001);
         height: auto;
         display: block;
-        border-style: solid;
-        border-color: white;
         box-shadow: -2px -5px 2px rgba(0, 0, 150, 0.8);
         -webkit-box-shadow: -2px -5px 2px rgba(0, 0, 150, 0.8);
         -moz-box-shadow: -2px -5px 2px rgba(0, 0, 150, 0.8);
         -o-box-shadow: -2px -5px 2px rgba(0, 0, 150, 0.8);
-        background: white;
-        color: black;
         width: auto;
         margin-left: 16.0%;
         width: 65%;
@@ -136,7 +132,6 @@
         font-size: 16px;
         padding: 30px 10px 30px;
         text-align: center;
-        color: rgba(0, 0, 150, 0.8);
     }
     /* random item of quotes to be display to the user when they login*/
     
@@ -185,9 +180,10 @@
     
     .profile p {
         overflow: hidden;
-        font-size: 12.5px;
+        font-size: 16.5px;
         text-align: center;
-        color: rgba(0, 0, 150, 0.8);
+        color: rgba(0, 0, 128, 0.9);
+        font-weight: bold;
     }
     
     @media (min-width: 576px) {

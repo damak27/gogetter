@@ -1,12 +1,17 @@
-body {
+.body {
     font: 16px/1.5 'Raleway', Arial, sans-serif;
     margin: 0;
-    padding: 0
+    padding: 0;
+    background-color: rgba(0, 0, 128, 0.15);
 }
 
 header {
-    height: 550px;
+    height: 690px;
     background-image: url('../images/back1.jpg');
+    -webkit-background-repeat: no-repeat;
+    -ms-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-attachment: fixed;
@@ -20,6 +25,70 @@ header {
     -o-background-size: cover;
     background-size: cover;
     background-position: center
+}
+
+
+/* this style affects display on the header*/
+
+.unkown {
+    width: 60%;
+    background-color: rgba(0, 0, 128, 0.4);
+    height: 400px;
+    margin-top: 8%;
+    margin-left: 15%;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -o-border-radius: 10%;
+    color: white;
+    font-weight: bold;
+}
+
+a button {
+    color: white;
+    background-color: rgba(0, 0, 128, 0.8);
+    padding: 5px 5px 5px;
+}
+
+
+/* this style affects display on the header*/
+
+.button {
+    float: left;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2px;
+}
+
+.two {
+    margin-top: 20px;
+}
+
+
+/* this style affects display on the header*/
+
+.one {
+    margin-left: 35%;
+    margin-top: -30px;
+}
+
+
+/* this style affects display on the header*/
+
+.unkown p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 90%;
+}
+
+.sheild {
+    margin-top: -10px;
+    width: 110%;
+    background-color: rgba(0, 0, 128, 0.02);
+    height: 100%;
+}
+
+.pre {
+    padding-top: 20px;
 }
 
 
