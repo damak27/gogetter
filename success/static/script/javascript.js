@@ -17,8 +17,10 @@ $(function() {
     if (window.matchMedia("(max-width:150px)" && "(max-width:680px)").matches) {
 
         $('div.one').remove();
+        $('div.shield').remove();
     }
 });
+
 /* responsive menu of the menu bar*/
 
 function myFunction() {
@@ -110,7 +112,7 @@ $(function() {
                 sticky: false
             }, options);
         return this.each(function() {
-            $(this).find(".button").on('click', function() {
+            $(this).find(".button1").on('click', function() {
                 $(this).toggleClass('menu-opened');
                 var mainmenu = $(this).next('ul');
                 if (mainmenu.hasClass('open')) {

@@ -1,80 +1,10 @@
- {% load staticfiles %}
-<!DOCTYPE html>
-<html>
-<header>
+{% extends 'success/base1.html' %}
 
-    <title>LEADING INVESTOR LOCATOR</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+</div>
+{% block content %}{% load staticfiles %}
 
-    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
-
-    <link rel="stylesheet" href="{% static 'css/about_us.css' %}">
-
-    <link rel='stylesheet' href="{% static 'css/articles_homepage.css' %}">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-    <script src="{% static 'script/javascript.js' %}">
-    </script>
-    <nav id='cssmenu'>
-        <div class="logo"><a href="">GOGETTERS</a></div>
-        <div id="head-mobile"></div>
-        <div class="button"></div>
-        <ul>
-            <li><a href="{% url 'success:home' %}">HOME</a></li>
-            <li><a href="{% url 'success:about_us' %}">ABOUT</a></li>
-
-            <li><a href='#'>PRIORITIES</a>
-                <ul>
-
-                    <li>
-                        <a href="{% url 'success:Security' %}">Security</a></li>
-                    <li><a href="{% url 'success:Posibility' %}">Possiblities</a></li>
-                    <li> <a href="{% url 'success:Partner' %}">Partnership</a></li>
-                </ul>
-
-            </li>
-            <li><a href='#'>MARKET</a>
-                <ul>
-                    <li><a href='#'>Africa</a></li>
-                    <li><a href='#'>Global</a></li>
-                </ul>
-
-            </li>
-            <li><a href='#'>ONLINEMARKET</a>
-
-
-
-                <li><a href='#'>BUSINESSTODAY</a></li>
-                {% if user.is_authenticated %} {% else %}
-                <li><a href='#'>CONTACT</a>
-
-                    <ul>
-                        <li><a href="{% url 'success:contact_add' %}">MarketingTeam</a></li>
-                        <li><a href="{% url 'success:Partner' %}">Other</a></li>
-                    </ul>
-                </li>{% endif %}
-                <li><a href='#'>GOGETTERITSOLUTION</a></li>
-                {% if user.is_authenticated %} {% else %}
-                <li><a href='#'>LOGIN</a>
-
-                    <ul>
-                        <li><a href='#'>Investor</a></li>
-                        <li><a href='#'>StartUp</a></li>
-                        <li><a href="{% url 'success:login' %}">Other</a></li> {% endif %}
-                    </ul>
-
-    </nav>
-</header>
-
-<body>
-    <div class="body1">
-
-
+<article>
+    <div class="security" id="important">
         <div class="about_content  about_vertical">
             <article>
 
@@ -131,16 +61,11 @@
             </article>
         </div>
 
-        <div class="about_members">
-            <div class="members">
-                <img src="{% static 'images/africa-political.gif' %}" arlt="Africa">
-                <p>AFRICA</p>
-                <div class="about_members">
-                    <div class="members">
-                        <img src="{% static 'images/world2.jpg' %}" arlt="The world">
-                        <p>World</p>
-                    </div>
+    </div>
+    <div class="ad">
+        <p> google add here </p>
+    </div>
+</article>
 
-</body>
 
-</html>
+{% endblock content %}

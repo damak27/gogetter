@@ -1,198 +1,55 @@
-ul {
-    list-style: none;
-}
-
-li {}
-
-label {
-    margin-right: 0px;
-    color: white;
-}
-
 .contact_form {
     margin-left: 10%;
-    border-style: solid;
-    width: 30%;
-    height: auto;
-    border-color: rgba(0, 0, 128, 0.9);
-    border-width: 1px;
-    background-color: rgba(0, 0, 150, 0.4);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -o-border-radius: 10px;
-    -ms-border-radius: 10px;
-    margin-top: 10px;
+    width: 50%;
     float: left;
-    color: rgba(0, 0, 128, 0.4);
-    ;
+    color: navy;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.p1 {
-    width: 220px;
-    height: auto;
-    margin-top: -50%;
-    margin-left: 20%;
-    display: block;
+.contact_form form {
+    width: 20%;
 }
 
-.no {
-    font-size: 16px;
+.ad {
+    float: left;
+    margin-left: 10000px;
 }
 
-.no a:link {
-    text-decoration: none;
-}
-
-.field {
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -o-border-radius: 10px;
-    -ms-border-radius: 10px;
-    color: black;
-}
-
-.p {
-    width: 350px;
-    height: 350px;
-    margin-left: 25%;
-    margin-top: -58%;
+.contact_form .button {
+    margin-left: 100px;
+    background-color: navy;
+    padding: 5px 20px 5px;
     color: white;
-    width: 290px;
-    font-size: 16px;
-    font-style: italic;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border-style: inset;
-    border-width: 1px;
-    height: 100px;
-    padding: 4px 10px 2px;
-    border-radius: 10%;
-    -webkit-border-radius: 10%;
-    -o-border-radius: 10%;
-    -moz-border-radius: 10%;
-    -ms-border-radius: 10%;
-    background-color: rgba(0, 0, 128, 0.8);
-    box-shadow: 1px 16px 5px #888888;
-    -webkit-transform-origin-y: rotate(-27deg);
-    -moz-transform: rotate(-27deg);
-    -o-transform: rotate(-27deg);
-    -ms-transform: rotate(-27deg);
-    -webkit-transform: rotate(-27deg);
 }
 
-.circle1 {
+.contact_form .button:hover {
     background-color: white;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -o-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    width: 350px;
-    height: 350px;
-    margin-left: 10%;
-    margin-top: 20px;
+    color: navy;
 }
 
-.circle {
-    width: 350px;
-    height: 350px;
-    background-color: rgba(0, 0, 128, 1);
-    ;
-    float: left;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -o-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    margin-left: 11%;
-    margin-top: 150px;
-    display: block;
-}
-
-.body {
-    background-color: rgba(0, 0, 150, 0.9);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-field {
-    width: 600px;
-}
-
-.button {
-    margin-left: 0px;
-    padding: 5px 50px 5px;
-    background-color: rgba(0, 0, 128, 0.4);
-    color: white;
-    margin-bottom: 3px;
-}
-
-.button:hover {
-    background-color: rgba(0, 0, 128, 0.4);
-    color: white;
-    width: 240px;
-    margin-left: 60px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-@media only screen and (min-width:150px) and (max-width:600px) {
+@media only screen and (min-width:150px) and (max-width:680px) {
     .contact_form {
-        border: none;
-        width: 0%;
-    }
-    form {
-        width: 100%;
-        height: 200px;
-    }
-    .field {
-        max-width: 10px;
-        height: auto;
-        padding: 30px 30px 30px;
-        margin-left: -30px;
-        padding: 0px;
-    }
-    .button:hover {
-        margin-left: 0px;
-        width: auto;
-    }
-    .button {
-        margin-top: 20%;
-        margin-left: 90%;
-    }
-    .circle,
-    .circle1 {
-        width: 100%;
-        border-radius: 80%;
-        -webkit-border-radius: 80%;
-        -moz-border-radius: 80%;
-        -o-border-radius: 80%;
-        margin-left: 0%;
-        display: block
-    }
-    .circle {
-        margin-top: 190%;
-    }
-    .p {
-        font-size: 14px;
-        width: 75%;
-        border-radius: 10%;
-        -webkit-border-radius: 10%;
-        -moz-border-radius: 10%;
-        -o-border-radius: 10%;
-        color: white;
-        padding: 10px 20px 20px;
-        margin-left: 50px;
-    }
-    .p1 {
-        margin-top: -65%;
         margin-left: 10%;
+        width: 50%;
+        float: left;
+        color: navy;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+        clear: left;
+        display: block;
+    }
+    .contact_form form {
+        width: 100%;
+    }
+    .contact_form .button {
+        margin-left: 0px;
+        background-color: navy;
+        padding: 5px 20px 5px;
+        color: white;
+    }
+    .ad {
+        clear: left;
     }
 }

@@ -309,7 +309,7 @@ nav#cssmenu.stickytop {
         font-size: 12px;
         font-weight: 700
     }
-    .button {
+    .button1 {
         width: 55px;
         height: 46px;
         position: absolute;
@@ -318,7 +318,7 @@ nav#cssmenu.stickytop {
         cursor: pointer;
         z-index: 12399994;
     }
-    .button:after {
+    .button1:after {
         position: absolute;
         top: 22px;
         right: 20px;
@@ -329,7 +329,7 @@ nav#cssmenu.stickytop {
         border-bottom: 2px solid #dddddd;
         content: ''
     }
-    .button:before {
+    .button1:before {
         -webkit-transition: all .3s ease;
         -ms-transition: all .3s ease;
         transition: all .3s ease;
@@ -342,7 +342,7 @@ nav#cssmenu.stickytop {
         background: #ddd;
         content: ''
     }
-    .button.menu-opened:after {
+    .button1.menu-opened:after {
         -webkit-transition: all .3s ease;
         -ms-transition: all .3s ease;
         transition: all .3s ease;
@@ -357,7 +357,7 @@ nav#cssmenu.stickytop {
         -o-transform: rotate(45deg);
         transform: rotate(45deg)
     }
-    .button.menu-opened:before {
+    .button1.menu-opened:before {
         top: 23px;
         background: #fff;
         width: 19px;

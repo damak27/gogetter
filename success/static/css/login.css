@@ -111,7 +111,7 @@ button {
     opacity: 0.9;
 }
 
-@media only screen and (min-width:150px) and (max-width:600px) {
+@media only screen and (min-width:150px) and (max-width:680px) {
     .creat_account button {
         margin-left: 10px;
         float: left;
@@ -132,14 +132,13 @@ button {
         height: auto;
         width: 260px;
         display: block;
-        margin-left: -10%;
     }
     .back {
         margin-top: -35%;
     }
     .login {
         margin-top: 100px;
-        margin-left: 6%;
+        margin-left: 1%;
     }
     .bar1 img {
         width: 220px;

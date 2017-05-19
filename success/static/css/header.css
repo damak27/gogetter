@@ -45,14 +45,14 @@
                     -o-box-shadow: 5px 10px 10px rgba(0, 0, 150, 0.5);
                 }
                 
-                a button {
+                .one a button {
                     color: white;
                     background-color: rgba(0, 0, 128, 0.4);
                     padding: 5px 5px 5px;
                 }
                 /* this style affects display on the header*/
                 
-                .button {
+                .one .button {
                     float: left;
                     padding-left: 10px;
                     background-color: rgba(255, 255, 255, 0.7);
@@ -98,21 +98,21 @@
                 
                 @media only screen and (min-width:150px) and (max-width:680px) {
                     .unkown {
-                        width: auto;
+                        width: 90%;
                         height: auto;
                         margin-top: 1%;
-                        margin-left: 1%;
+                        margin-left: 5%;
                         margin-bottom: 10%;
                         padding-bottom: 20px;
+                        box-shadow: 1px 1px 1px rgba(0, 0, 150, 0.5);
+                        -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 150, 0.5);
+                        -moz-box-shadow: 1px 1px 1px rgba(0, 0, 150, 0.5);
+                        -o-box-shadow: 1px 1px 1px rgba(0, 0, 150, 0.5);
                     }
                     .unkown p {
                         text-align: center;
                         font-size: 12px;
                         line-height: 90%;
-                    }
-                    .sheild {
-                        width: 100%;
-                        height: 100%;
                     }
                     header {
                         height: 450px;
