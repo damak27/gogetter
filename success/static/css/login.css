@@ -118,27 +118,26 @@ button {
     }
     .input_form {
         margin: 10px;
-        margin-left: -20%;
+        margin-left: -10%;
     }
     .login_form .btn {
         margin-left: -10%;
         float: left;
     }
     .login_form h4 {
-        margin-left: -20%;
+        margin-left: -22%;
     }
     .bottomsidebar2 {
         margin-top: -30%;
         height: auto;
-        width: 260px;
-        display: block;
+        width: 95%;
     }
     .back {
         margin-top: -35%;
     }
     .login {
         margin-top: 100px;
-        margin-left: 1%;
+        margin-left: 5px;
     }
     .bar1 img {
         width: 220px;
