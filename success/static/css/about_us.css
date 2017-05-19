@@ -44,7 +44,6 @@ p {
 }
 
 .about_members {
-    float: left;
     width: 40%;
     margin-top: 10%;
 }
@@ -70,7 +69,9 @@ content {
 
 @media only screen and (min-width:150px) and (max-width:600px) {
     .about_content {
-        width: 100%;
+        width: 95%;
+        margin-left: 4px;
+        overflow: hidden
     }
     .about_vertical {
         border: none;
