@@ -12,6 +12,13 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+/* removes div button on screen resize*/
+$(function() {
+    if (window.matchMedia("(max-width:150px)" && "(max-width:680px)").matches) {
+
+        $('div.one').remove();
+    }
+});
 /* responsive menu of the menu bar*/
 
 function myFunction() {
